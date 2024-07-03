@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    background-color: cornflowerblue;
+    margin-block-start: 0;
+}
+
+footer {
+    background-color: cornflowerblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 16px;
+}

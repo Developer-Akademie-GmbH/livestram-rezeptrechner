@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezepte für Pfannkuchen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <script>
+    function calculate() {
+      eggs.innerHTML = `${+portions.value * 0.5} Eier`;
+      milk.innerHTML = `${+portions.value * 40}ml Milch`;
+      flour.innerHTML = `${+portions.value * 25}ml Milch`;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Pfannkuchen Rezept</h1>
+  <br>
+
+  <input id="portions" type="number" placeholder="Wie viele Portionen?">
+  <button onclick="calculate()">Berechnen</button>
+
+  <ul>
+    <li id="eggs">1 Ei</li>
+    <li id="milk">150ml Milch</li>
+    <li id="flour">100g Mehl</li>
+    <li>Prise Zucker</li>
+    <li>Prise Salz</li>
+  </ul>
+
+  <footer>
+    (C) 2024 - Rezeptrechner - Developer Akademie GmbH 
+  </footer>
+</body>
+
+</html>
